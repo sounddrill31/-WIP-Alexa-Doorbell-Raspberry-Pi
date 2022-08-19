@@ -2,6 +2,7 @@ from gpiozero import LED
 #imports LED functions from gpiozero library
 from gpiozero import Button        
 #imports Button functions from gpiozero library
+import requests
 
 led = LED(4)
 #declare the GPIO pin 4 for LED output and store it in led variable

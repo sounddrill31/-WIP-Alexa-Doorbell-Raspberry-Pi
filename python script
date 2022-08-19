@@ -13,6 +13,8 @@ while True:
         button.wait_for_press()
 #use the built-in function of the button to wait till press
         led.on()
+        requests.post('https://maker.ifttt.com/trigger/{EVENT_NAME}/with/key/{YOURAPIKEY}')
+
 #turn on the led
         button.wait_for_release()
 #use the built-in function of button to wait till release
